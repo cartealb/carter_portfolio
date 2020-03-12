@@ -973,7 +973,7 @@ ul {
         grid-column: 2/ span 2;
     }
     img {
-        width: 215px;
+        width: 260px;
     }
     li {
         list-style-position: inside;
@@ -1068,7 +1068,7 @@ ul {
     }
 }
 
-@media screen and (min-width:1680px) {
+@media screen and (min-width:1420px) {
     #projects {
         padding-top: 0px;
     }
@@ -1078,7 +1078,7 @@ ul {
         margin-top: 25px;
     }
     .grid-container {
-        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-columns: 1fr 6fr 6fr 1fr;
     }
     #intro,
     #projects,
@@ -1232,7 +1232,7 @@ ul {
         grid-column: 2/ span 2;
     }
     img {
-        width: 215px;
+        width: 306px;
     }
     li {
         list-style-position: inside;
@@ -1327,6 +1327,29 @@ ul {
     #about,
     #designs {
         margin-top: 25px;
+    }
+    #engin_text p,
+    #web_text p,
+    #ux_text p,
+    #research_text p,
+    #debug_text p,
+    #learn_text p,
+    #people_text p,
+    #design_text p,
+    #about_text p {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 31px;
+    }
+    ul {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    .button {
+        font-size: 23px;
     }
 }
 
