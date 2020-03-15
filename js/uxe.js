@@ -68,3 +68,20 @@ window.addEventListener('scroll', function(e) {
 //     let rate = scrolled * 0.45;
 //     target.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)';
 // });
+
+function setVoiceOverFocus(element) {
+    var focusInterval = 10; // ms, time between function calls
+    var focusTotalRepetitions = 10; // number of repetitions
+
+    element.setAttribute('tabindex', '0');
+    element.blur();
+
+    var focusRepetitions = 0;
+    var interval = window.setInterval(function() {
+        element.focus();
+        focusRepetitions++;
+        if (focusRepetitions >= focusTotalRepetitions) {
+            window.clearInterval(interval);
+        }
+    }, focusInterval);
+}
